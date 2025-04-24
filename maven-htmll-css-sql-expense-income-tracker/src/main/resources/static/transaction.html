@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transactions - Expense-Income Tracker</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="container">
+    <h1>Transactions</h1>
+    <form>
+        <select>
+            <option value="">Select Wallet</option>
+            <option value="1">Cash</option>
+            <option value="2">Bank</option>
+        </select>
+        <select>
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+        </select>
+        <input type="number" placeholder="Amount" />
+        <button type="submit" onclick="alert('Transaction handled in backend')">Add Transaction</button>
+    </form>
+    <h3>Transaction History</h3>
+    <table>
+        <tr>
+            <th>Type</th>
+            <th>Wallet</th>
+            <th>Amount</th>
+            <th>Date</th>
+        </tr>
+        <tr><td>Income</td><td>Bank</td><td>$1000</td><td>2024-04-10</td></tr>
+        <tr><td>Expense</td><td>Cash</td><td>$50</td><td>2024-04-11</td></tr>
+    </table>
+</div>
+</body>
+</html>
